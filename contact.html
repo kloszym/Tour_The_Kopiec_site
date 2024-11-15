@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tour The Kopiec - kontakt</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic" >
+    <script src="validation.js"></script>
+    <script src="clock.js"></script>
+    
+    <style>
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class = 'site'>
+        <header>
+            <h1 style="padding: 1%;">Tour The Kopiec</h1>
+            <nav>
+                <a href="./index.html">Strona Główna</a>
+                <a href="./gallery.html">Galeria</a>
+                <a href="./contact.html">Kontakt</a>
+            </nav>
+        </header>
+
+        <div class="contacts">
+
+            <h1>Możesz wysłać do nas maila z zapytaniami</h1>
+            <div id="clock"></div>
+            <form name="form" onsubmit="return validateForm()">
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="name">
+                <br>
+                <label for="surname">Nazwisko:</label>
+                <input type="text" id="surname" name="surname">
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <br>
+                <label for="message">Wiadomość:</label>
+                <input id = "message" type="text" id="message" name="message">
+                <br>
+                <button type="submit">Wyślij</button>
+                <br>
+            </form>
+            <script src="validation.js"></script>
+        </div>
+
+        <footer>
+            <p>Autor: Szymon Kłodowski</p>
+        </footer>
+    </div>
 </body>
 </html>
